@@ -1,0 +1,15 @@
+#
+colnames(cars)
+cor(Cars)
+plot(cars)
+model.car<-lm(MPG~VOL+HP+SP+WT,data = Cars)
+summary(model.car)
+plot(model.car)
+car::residualplots(model.car)
+car::residualplots(model.car)
+car::avPlots(model.car)
+car::qqPlot(model.car)
+#DELETION DIAGNOSTICS
+influence.measures(model.car)
+
+
